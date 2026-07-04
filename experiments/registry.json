@@ -1,0 +1,26 @@
+{
+  "exp_000_logreg": {
+    "arch_class": "linear",
+    "cv_roc_auc": 0.837318094396647,
+    "params": {
+      "scale": true
+    },
+    "accepted": true
+  },
+  "exp_001_lgbm": {
+    "arch_class": "gbdt",
+    "cv_roc_auc": 0.8951906540323479,
+    "params": {
+      "scale": false
+    },
+    "accepted": true
+  },
+  "exp_002_xgb": {
+    "arch_class": "gbdt",
+    "cv_roc_auc": 0.8954479268839375,
+    "params": {
+      "scale": false
+    },
+    "accepted": true
+  }
+}

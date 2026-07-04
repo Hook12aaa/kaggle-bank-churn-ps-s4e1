@@ -1,0 +1,16 @@
+{
+  "weights": {
+    "exp_000_logreg": 0.03333333333333333,
+    "exp_001_lgbm": 0.4,
+    "exp_002_xgb": 0.5666666666666667
+  },
+  "ensemble_cv_roc_auc": 0.8957583926780073,
+  "best_single": "exp_002_xgb",
+  "best_single_cv_roc_auc": 0.8954479268839375,
+  "uplift_vs_best_single": 0.0003104657940697919,
+  "singles": {
+    "exp_000_logreg": 0.837318094396647,
+    "exp_001_lgbm": 0.8951906540323479,
+    "exp_002_xgb": 0.8954479268839375
+  }
+}

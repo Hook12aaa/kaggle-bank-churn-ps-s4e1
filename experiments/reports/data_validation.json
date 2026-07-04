@@ -1,0 +1,59 @@
+{
+  "checks": {
+    "missing_values": {
+      "train_cols_with_na": {},
+      "test_cols_with_na": {}
+    },
+    "duplicate_rows_excluding_id": 0,
+    "target": {
+      "present": true,
+      "n_classes": 2,
+      "positive_rate": 0.21159882206090866,
+      "imbalanced": false
+    },
+    "constant_columns": [],
+    "column_consistency": {
+      "only_in_train": [],
+      "only_in_test": []
+    },
+    "id_uniqueness": {
+      "train_unique": 1,
+      "test_unique": 1,
+      "train_test_overlap": 0
+    },
+    "categoricals": {
+      "categorical_columns": [
+        "Surname",
+        "Geography",
+        "Gender"
+      ],
+      "high_cardinality": {
+        "Surname": 2797
+      }
+    },
+    "dtype_consistency": {},
+    "target_correlations": {
+      "CustomerId": -0.009946547888820732,
+      "CreditScore": -0.027382600061651656,
+      "Age": 0.34076816340757937,
+      "Tenure": -0.0195648444840774,
+      "Balance": 0.12974286048401104,
+      "NumOfProducts": -0.2145542315849075,
+      "HasCrCard": -0.022141333072306365,
+      "IsActiveMember": -0.2102370257921367,
+      "EstimatedSalary": 0.018826805670812807
+    }
+  },
+  "status": "PASS",
+  "concerns": [],
+  "shapes": {
+    "train": [
+      165034,
+      14
+    ],
+    "test": [
+      110023,
+      13
+    ]
+  }
+}

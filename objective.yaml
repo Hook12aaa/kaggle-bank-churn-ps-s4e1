@@ -1,0 +1,15 @@
+dataset:
+  train: ./train.csv
+  test: ./test.csv
+  target_column: Exited
+
+competition:
+  metric: roc_auc
+  metric_direction: maximize
+  submission_format:
+    id_column: id
+    prediction_column: Exited
+
+constraints:
+  max_iterations: 15
+  architecture_classes_minimum: 3
