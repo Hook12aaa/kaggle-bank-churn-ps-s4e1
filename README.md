@@ -1,6 +1,6 @@
 # Kaggle Playground Series S4E1 -- Bank Churn Prediction
 
-This is an autonomous run I did with auto-model-trainer (an earlier version with a slightly different structure than the current plugin). I pointed it at the objective file and let it explore on its own. It worked through 2 architecture classes -- linear and gbdt -- across 3 experiments, then blended the survivors with a Caruana ensemble. The thing that actually moved the needle was target encoding on `Surname`, `CustomerId`, the `GeoGender` cross, and an `AgeBin` bucket, all done with fold-safe mean target encoding so nothing leaked.
+This solution was created by [auto-model-trainer](https://github.com/Hook12aaa/auto-model-trainer), a Claude Code plugin for autonomous ML training (earlier version with a slightly different structure). Given the competition objective, it worked through 2 architecture classes -- linear and gbdt -- across 3 experiments, then blended the survivors with a Caruana ensemble. The thing that actually moved the needle was target encoding on `Surname`, `CustomerId`, the `GeoGender` cross, and an `AgeBin` bucket, all done with fold-safe mean target encoding so nothing leaked.
 
 ## Competition
 
@@ -25,8 +25,7 @@ The Caruana blend landed on XGBoost 56.7%, LightGBM 40.0%, and LogReg 3.3%. The 
 
 ```
 ps-s4e1-churn/
-├── objective.yaml            # the spec I handed to auto-model-trainer
-├── train.csv / test.csv      # competition data
+├── objective.yaml            # competition objective given to auto-model-trainer
 ├── submission.csv            # final predictions
 └── experiments/
     ├── registry.json         # every experiment with its arch class and CV score
@@ -42,7 +41,7 @@ ps-s4e1-churn/
 
 ## Usage
 
-This was built with the auto-model-trainer plugin for Claude Code. With the plugin installed:
+Created by the [auto-model-trainer](https://github.com/Hook12aaa/auto-model-trainer) plugin for Claude Code. With the plugin installed:
 
 ```
 /auto-train objective.yaml
